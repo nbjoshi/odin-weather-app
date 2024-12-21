@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Text:ital@0;1&family=Fascinate&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Varela Round", serif;
+  overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1616712134411-6b6ae89bc3ba?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwc3BhY2V8ZW58MHx8MHx8fDA%3D");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  border-radius: 28px;
+  padding: 14px;
+  background-color: gray;
+  margin: 20px;
+}
+
+.search-bar {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  color: white;
+  opacity: 0.9;
+  background: transparent;
+  width: 300px;
+}
+
+.search-bar::placeholder {
+  color: white;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 4rem;
+  font-size: 1.6rem;
+  gap: 1rem;
+}
+
+.container > * {
+  animation: grow 0.5s ease-in-out;
+}
